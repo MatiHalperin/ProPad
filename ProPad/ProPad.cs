@@ -26,7 +26,6 @@ namespace ProPad
 
         private void frmProPad_Load(object sender, EventArgs e)
         {
-            //
             pictureBox1.Width = this.Width + 200;
 
             foreach (Control x in this.Controls)
