@@ -109,6 +109,7 @@
             // lblPegar
             // 
             this.lblPegar.AutoSize = true;
+            this.lblPegar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblPegar.ForeColor = System.Drawing.Color.White;
             this.lblPegar.Location = new System.Drawing.Point(234, 71);
             this.lblPegar.Name = "lblPegar";
@@ -119,6 +120,7 @@
             // lblCortar
             // 
             this.lblCortar.AutoSize = true;
+            this.lblCortar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblCortar.ForeColor = System.Drawing.Color.White;
             this.lblCortar.Location = new System.Drawing.Point(338, 20);
             this.lblCortar.Name = "lblCortar";
@@ -129,6 +131,7 @@
             // lblCopiar
             // 
             this.lblCopiar.AutoSize = true;
+            this.lblCopiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblCopiar.ForeColor = System.Drawing.Color.White;
             this.lblCopiar.Location = new System.Drawing.Point(337, 51);
             this.lblCopiar.Name = "lblCopiar";
@@ -139,6 +142,7 @@
             // lblGuardar
             // 
             this.lblGuardar.AutoSize = true;
+            this.lblGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblGuardar.ForeColor = System.Drawing.Color.White;
             this.lblGuardar.Location = new System.Drawing.Point(18, 71);
             this.lblGuardar.Name = "lblGuardar";
@@ -149,6 +153,7 @@
             // lblAbrir
             // 
             this.lblAbrir.AutoSize = true;
+            this.lblAbrir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblAbrir.ForeColor = System.Drawing.Color.White;
             this.lblAbrir.Location = new System.Drawing.Point(90, 71);
             this.lblAbrir.Name = "lblAbrir";
@@ -159,6 +164,7 @@
             // lblImprimir
             // 
             this.lblImprimir.AutoSize = true;
+            this.lblImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblImprimir.ForeColor = System.Drawing.Color.White;
             this.lblImprimir.Location = new System.Drawing.Point(146, 71);
             this.lblImprimir.Name = "lblImprimir";
@@ -208,6 +214,7 @@
             // lblInsertarImagen
             // 
             this.lblInsertarImagen.AutoSize = true;
+            this.lblInsertarImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblInsertarImagen.ForeColor = System.Drawing.Color.White;
             this.lblInsertarImagen.Location = new System.Drawing.Point(866, 71);
             this.lblInsertarImagen.Name = "lblInsertarImagen";
@@ -218,6 +225,7 @@
             // lblCompartir
             // 
             this.lblCompartir.AutoSize = true;
+            this.lblCompartir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblCompartir.ForeColor = System.Drawing.Color.White;
             this.lblCompartir.Location = new System.Drawing.Point(976, 71);
             this.lblCompartir.Name = "lblCompartir";
@@ -228,6 +236,7 @@
             // lblRecibirArhivo
             // 
             this.lblRecibirArhivo.AutoSize = true;
+            this.lblRecibirArhivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblRecibirArhivo.ForeColor = System.Drawing.Color.White;
             this.lblRecibirArhivo.Location = new System.Drawing.Point(1032, 71);
             this.lblRecibirArhivo.Name = "lblRecibirArhivo";
@@ -238,6 +247,7 @@
             // lblChat
             // 
             this.lblChat.AutoSize = true;
+            this.lblChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblChat.ForeColor = System.Drawing.Color.White;
             this.lblChat.Location = new System.Drawing.Point(1140, 71);
             this.lblChat.Name = "lblChat";
@@ -509,7 +519,7 @@
             // 
             // btnFormatoResaltado
             // 
-            this.btnFormatoResaltado.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoResaltado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoResaltado.FlatAppearance.BorderSize = 0;
             this.btnFormatoResaltado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoResaltado.Image = global::ProPad.Properties.Resources.Resaltado;
@@ -522,7 +532,7 @@
             // 
             // btnFormatoViñetas
             // 
-            this.btnFormatoViñetas.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoViñetas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoViñetas.FlatAppearance.BorderSize = 0;
             this.btnFormatoViñetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoViñetas.Image = global::ProPad.Properties.Resources.Viñetas;
@@ -535,7 +545,7 @@
             // 
             // btnChat
             // 
-            this.btnChat.BackColor = System.Drawing.Color.Transparent;
+            this.btnChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnChat.FlatAppearance.BorderSize = 0;
             this.btnChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChat.Image = global::ProPad.Properties.Resources.Chat;
@@ -548,7 +558,7 @@
             // 
             // btnFormatoColor
             // 
-            this.btnFormatoColor.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoColor.FlatAppearance.BorderSize = 0;
             this.btnFormatoColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoColor.Image = global::ProPad.Properties.Resources.Color;
@@ -561,7 +571,7 @@
             // 
             // btnRecibirArhivo
             // 
-            this.btnRecibirArhivo.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecibirArhivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnRecibirArhivo.FlatAppearance.BorderSize = 0;
             this.btnRecibirArhivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecibirArhivo.Image = global::ProPad.Properties.Resources.Recibir_archivo;
@@ -574,7 +584,7 @@
             // 
             // btnCompartir
             // 
-            this.btnCompartir.BackColor = System.Drawing.Color.Transparent;
+            this.btnCompartir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCompartir.FlatAppearance.BorderSize = 0;
             this.btnCompartir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompartir.Image = global::ProPad.Properties.Resources.Compartir;
@@ -587,7 +597,7 @@
             // 
             // btnInsertarImagen
             // 
-            this.btnInsertarImagen.BackColor = System.Drawing.Color.Transparent;
+            this.btnInsertarImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnInsertarImagen.FlatAppearance.BorderSize = 0;
             this.btnInsertarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertarImagen.Image = global::ProPad.Properties.Resources.Insertar_imagen;
@@ -600,7 +610,7 @@
             // 
             // btnAlineacionDerecha
             // 
-            this.btnAlineacionDerecha.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlineacionDerecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAlineacionDerecha.FlatAppearance.BorderSize = 0;
             this.btnAlineacionDerecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlineacionDerecha.Image = global::ProPad.Properties.Resources.Alineacion_Derecha;
@@ -613,7 +623,7 @@
             // 
             // btnAlineacionCentro
             // 
-            this.btnAlineacionCentro.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlineacionCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAlineacionCentro.FlatAppearance.BorderSize = 0;
             this.btnAlineacionCentro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlineacionCentro.Image = global::ProPad.Properties.Resources.Alineacion_Centro;
@@ -626,7 +636,7 @@
             // 
             // btnAlineacionIzquierda
             // 
-            this.btnAlineacionIzquierda.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlineacionIzquierda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAlineacionIzquierda.FlatAppearance.BorderSize = 0;
             this.btnAlineacionIzquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlineacionIzquierda.Image = global::ProPad.Properties.Resources.Alineacion_Izquierda;
@@ -639,7 +649,7 @@
             // 
             // btnFormatoTachado
             // 
-            this.btnFormatoTachado.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoTachado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoTachado.FlatAppearance.BorderSize = 0;
             this.btnFormatoTachado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoTachado.Image = global::ProPad.Properties.Resources.Tachado;
@@ -652,7 +662,7 @@
             // 
             // btnFormatoSubrayado
             // 
-            this.btnFormatoSubrayado.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoSubrayado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoSubrayado.FlatAppearance.BorderSize = 0;
             this.btnFormatoSubrayado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoSubrayado.Image = global::ProPad.Properties.Resources.Subrayado;
@@ -665,7 +675,7 @@
             // 
             // btnFormatoItalica
             // 
-            this.btnFormatoItalica.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoItalica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoItalica.FlatAppearance.BorderSize = 0;
             this.btnFormatoItalica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoItalica.Image = global::ProPad.Properties.Resources.Italica;
@@ -678,7 +688,7 @@
             // 
             // btnFormatoNegrita
             // 
-            this.btnFormatoNegrita.BackColor = System.Drawing.Color.Transparent;
+            this.btnFormatoNegrita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFormatoNegrita.FlatAppearance.BorderSize = 0;
             this.btnFormatoNegrita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatoNegrita.Image = global::ProPad.Properties.Resources.Negrita;
@@ -692,7 +702,7 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.BackColor = System.Drawing.Color.Transparent;
+            this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnImprimir.FlatAppearance.BorderSize = 0;
             this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImprimir.Image = global::ProPad.Properties.Resources.Imprimir;
@@ -705,7 +715,7 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbrir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAbrir.FlatAppearance.BorderSize = 0;
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Image = global::ProPad.Properties.Resources.Abrir;
@@ -718,7 +728,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = global::ProPad.Properties.Resources.Guardar;
@@ -731,7 +741,7 @@
             // 
             // btnCopiar
             // 
-            this.btnCopiar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCopiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCopiar.FlatAppearance.BorderSize = 0;
             this.btnCopiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCopiar.Image = global::ProPad.Properties.Resources.Copiar;
@@ -744,7 +754,7 @@
             // 
             // btnCortar
             // 
-            this.btnCortar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCortar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCortar.FlatAppearance.BorderSize = 0;
             this.btnCortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCortar.Image = global::ProPad.Properties.Resources.Cortar;
@@ -757,7 +767,7 @@
             // 
             // btnPegar
             // 
-            this.btnPegar.BackColor = System.Drawing.Color.Transparent;
+            this.btnPegar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnPegar.FlatAppearance.BorderSize = 0;
             this.btnPegar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPegar.Image = global::ProPad.Properties.Resources.Pegar;
@@ -770,7 +780,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Green;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pictureBox1.Location = new System.Drawing.Point(-4, -10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1255, 105);
