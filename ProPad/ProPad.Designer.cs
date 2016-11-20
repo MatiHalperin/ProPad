@@ -61,8 +61,6 @@
             this.centroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.derechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new RichTextBoxPrintCtrl.RichTextBoxPrintCtrl();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.Separador6 = new System.Windows.Forms.PictureBox();
             this.Separador5 = new System.Windows.Forms.PictureBox();
@@ -95,8 +93,9 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.richTextBox1 = new RichTextBoxPrintCtrl.RichTextBoxPrintCtrl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Separador6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador4)).BeginInit();
@@ -104,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Separador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPegar
@@ -435,28 +435,6 @@
             this.derechaToolStripMenuItem.Text = "Derecha";
             this.derechaToolStripMenuItem.Click += new System.EventHandler(this.derechaToolStripMenuItem_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 111);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 148);
-            this.panel1.TabIndex = 38;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(788, 146);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
-            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
-            this.richTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox1_KeyDown);
-            // 
             // notifyIcon1
             // 
             this.notifyIcon1.Text = "notifyIcon1";
@@ -781,9 +759,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -10);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1255, 105);
+            this.pictureBox1.Size = new System.Drawing.Size(1255, 95);
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
@@ -806,6 +784,28 @@
             // pageSetupDialog1
             // 
             this.pageSetupDialog1.Document = this.printDocument1;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1215, 146);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
+            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
+            this.richTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox1_KeyDown);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Location = new System.Drawing.Point(12, 101);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1217, 148);
+            this.panel1.TabIndex = 38;
             // 
             // frmProPad
             // 
@@ -861,7 +861,6 @@
             this.Load += new System.EventHandler(this.frmProPad_Load);
             this.Resize += new System.EventHandler(this.frmProPad_Resize);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Separador6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador4)).EndInit();
@@ -869,6 +868,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Separador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Separador1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,7 +924,6 @@
         private System.Windows.Forms.ToolStripMenuItem centroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem derechaToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnFormatoViñetas;
         private System.Windows.Forms.Button btnFormatoResaltado;
         private System.Windows.Forms.ToolStripMenuItem resaltadoToolStripMenuItem;
@@ -936,11 +935,12 @@
         private System.Windows.Forms.PictureBox Separador4;
         private System.Windows.Forms.PictureBox Separador5;
         private System.Windows.Forms.PictureBox Separador6;
-        private RichTextBoxPrintCtrl.RichTextBoxPrintCtrl richTextBox1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private RichTextBoxPrintCtrl.RichTextBoxPrintCtrl richTextBox1;
+        private System.Windows.Forms.Panel panel1;
 
     }
 }

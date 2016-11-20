@@ -26,7 +26,8 @@ namespace ProPad
 
         private void frmProPad_Load(object sender, EventArgs e)
         {
-            pictureBox1.Width = this.Width + 200;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Width = this.ClientSize.Width;
 
             foreach (Control x in this.Controls)
                 if (x.GetType() != typeof(ComboBox) && x.Name.IndexOf("Separador") == -1)
@@ -36,14 +37,15 @@ namespace ProPad
             contextMenuStrip1.BackColor = pictureBox1.BackColor;
 
             richTextBox1.Font = new Font("Calibri", 11);
-
             richTextBox1.SelectionIndent = 110;
             richTextBox1.SelectionRightIndent = 110;
 
             this.BackColor = VerdeClaro;
 
+            panel1.Width = 788;
+            panel1.Top = pictureBox1.Bottom + 10;
             panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
-            panel1.Height = this.ClientSize.Height - pictureBox1.Bottom - 30;
+            panel1.Height = this.ClientSize.Height - pictureBox1.Bottom - 20;
 
             InstalledFontCollection InstalledFonts = new InstalledFontCollection();
 
@@ -72,25 +74,36 @@ namespace ProPad
                 Guardar.Filter = "Formato RTF|*.rtf|Documento de texto|*.txt|Todos los arhivos|*.";
 
                 if (Guardar.ShowDialog() == DialogResult.OK && Guardar.FileName.Length > 0)
-                {
-                    if (Guardar.FilterIndex == 0)
-                        richTextBox1.SaveFile(Guardar.FileName, RichTextBoxStreamType.RichText);
-                    else
-                        richTextBox1.SaveFile(Guardar.FileName, RichTextBoxStreamType.UnicodePlainText);
+                    try
+                    {
+                        if (Guardar.FilterIndex == 0)
+                            richTextBox1.SaveFile(Guardar.FileName, RichTextBoxStreamType.RichText);
+                        else
+                            richTextBox1.SaveFile(Guardar.FileName, RichTextBoxStreamType.UnicodePlainText);
 
-                    richTextBox1.Modified = false;
+                        richTextBox1.Modified = false;
 
-                    NombreArchivo = Guardar.FileName;
-                    this.Text = Guardar.FileName;
-                }
+                        NombreArchivo = Guardar.FileName;
+                        this.Text = Guardar.FileName;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        richTextBox1.Focus();
+                    }
             }
             else
-            {
-                richTextBox1.SaveFile(NombreArchivo);
-                richTextBox1.Modified = false;
-                MessageBox.Show("Guardado correctamente");
-            }
-
+                try
+                {
+                    richTextBox1.SaveFile(NombreArchivo);
+                    richTextBox1.Modified = false;
+                    MessageBox.Show("Guardado correctamente");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    richTextBox1.Focus();
+                }
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
@@ -101,7 +114,17 @@ namespace ProPad
             Abrir.Filter = "Formato RTF|*.rtf|Documento de texto|*.txt|Todos los arhivos|*.";
 
             if (Abrir.ShowDialog() == System.Windows.Forms.DialogResult.OK && Abrir.FileName.Length > 0)
-                richTextBox1.LoadFile(Abrir.FileName, RichTextBoxStreamType.RichText);
+                try
+                {
+                    richTextBox1.LoadFile(Abrir.FileName, RichTextBoxStreamType.RichText);
+                    NombreArchivo = Abrir.FileName;
+                    this.Text = Abrir.FileName;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    richTextBox1.Focus();
+                }
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
